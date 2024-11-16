@@ -10,7 +10,7 @@ aliases:
 ---
 ## Article React-Typescript Tips
 
-### `PropsWithChildren`
+##### Удобный тип `PropsWithChildren` для работы с `children`
 Если мы использовать children у React, чтобы не прописывать тип `children: ReactNode`, можно использовать дженерик `PropsWithChildren<>`
 
 ```typescript
@@ -31,7 +31,7 @@ const Title = ({title, children}: PropsWithChildren<Props>) => {
 
 ```
 
-#### Получить тип всех `props` у компонента можно через дженерик `ComponentProps<>`, которому можно передать тип нужного нам компонента `typeof ComponentName`
+##### Получить тип всех `props` у компонента можно через дженерик `ComponentProps<>`, которому можно передать тип нужного нам компонента `typeof ComponentName`
 
 ```typescript
 import { ComponentProps } from 'react';
